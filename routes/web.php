@@ -19,7 +19,14 @@ Route::get('/book', function () {
     return view('books');
 });
 
+Route::get('/upload/video', function () {
+    return view('uploadvt');
+});
+Route::match(['get','post'],'/savingvideo', 'UserController@video');
 
+Route::get('/archive/video',function(){
+	return view ('video');
+});
 
 Auth::routes();
 
