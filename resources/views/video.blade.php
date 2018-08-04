@@ -28,7 +28,9 @@ $vid='<iframe align="middle" width="700" height="300" src="https://www.youtube.c
 ?>
 </div>
 
-
+<footer>
+	Uploaded {{  $key->created_at->diffForHumans()}}
+</footer>
 
 
 @endforeach

@@ -16,47 +16,9 @@
     left: 0%;
     transform: translate(-50%, -50%);
   }
-  body{font-family: "Lato", sans-serif;
-}
+ 
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 </style>
 
 </head>
@@ -68,14 +30,14 @@
   <div class="navbar-header">
 
 
-     <a class="navbar-brand" href="#" align="left">বিশ্বজোড়া পাঠশালা</a>
+     <a class="navbar-brand" href="/home" align="left">বিশ্বজোড়া পাঠশালা</a>
   </div>
   <div class="container">
 
     <div class="container-fluid">
 
      <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
+      <li class="active"><a href="/home">Home</a></li>
       <li class="dropdown">
        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources
          <span class="caret"></span></a>
@@ -88,7 +50,7 @@
        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ask-Post-Up
          <span class="caret"></span></a>
          <ul class="dropdown-menu">
-          <li><a href="#">Write Blog</a></li>
+          <li><a href="/writeblog">Write Blog</a></li>
           <li><a href="#">Ask Question</a></li>
           <li><a href="/upload/video">Upload Video tutorial</a></li>
         </ul>
@@ -97,7 +59,7 @@
        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Archieve
          <span class="caret"></span></a>
          <ul class="dropdown-menu">
-          <li><a href="#">All Blog Posts</a></li>
+          <li><a href="/archive/blog">All Blog Posts</a></li>
           <li><a href="#">All Questions</a></li>
           <li><a href="/archive/video">All Video tutorials</a></li>
         </ul>

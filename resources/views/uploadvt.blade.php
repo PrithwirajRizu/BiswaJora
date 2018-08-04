@@ -133,7 +133,7 @@
        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ask-Post-Up
          <span class="caret"></span></a>
          <ul class="dropdown-menu">
-          <li><a href="#">Write Blog</a></li>
+          <li><a href="/writeblog">Write Blog</a></li>
           <li><a href="#">Ask Question</a></li>
           <li><a href="/upload/video">Upload Video tutorial</a></li>
         </ul>
@@ -142,13 +142,15 @@
        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Archieve
          <span class="caret"></span></a>
          <ul class="dropdown-menu">
-          <li><a href="#">All Blog Posts</a></li>
+          <li><a href="/archive/blog">All Blog Posts</a></li>
           <li><a href="#">All Questions</a></li>
           <li><a href="/archive/video">All Video tutorials</a></li>
         </ul>
       </li>
     </ul>
     <!--  Right Side Of Navbar -->
+
+    
     <ul class="nav navbar-nav navbar-right">
       <!-- Authentication Links -->
       <li class="nav-item dropdown">
@@ -180,8 +182,23 @@ echo "<br>";
 echo "<br>";
 echo "<br>";
 ?>
+
+<script type="text/javascript">
+            $(function() { 
+               $(".hide-it").hide(5000);
+         });
+            
+        </script>
+        @if (Session::has('message'))
+        <div>
+            <h1 class='hide-it'>Your video tutorial has been uploaded successfully.Check it in Archive</h1>
+        </div>
+        @endif
+
+
   
-<form class="o-pageproxy__form u-bgodd js-proxyform" method="post" action="{{  action('UserController@video')}}" >
+<form class="o-pageproxy__form u-bgodd js-proxyform" method="post" action="/upload/video" >
+         @csrf
          <fieldset>
             <div class="form-group">
                <div class="input-group">
@@ -193,7 +210,7 @@ echo "<br>";
                   <input class="form-control" name="title" type="text" placeholder="Video Titile" required>
                </div>
             </div>
-            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            
             <button class="c-btn c-btn__primary c-btn--md c-btn--normaltext u-mt15" type="submit">Submit</button>
          </fieldset>
       </form>

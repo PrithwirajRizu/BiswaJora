@@ -19,15 +19,14 @@ Route::get('/book', function () {
     return view('books');
 });
 
-Route::get('/upload/video', function () {
-    return view('uploadvt');
-});
-Route::match(['get','post'],'/savingvideo', 'UserController@video');
-
-Route::get('/archive/video',function(){
-	return view ('video');
-});
+Route::get('/upload/video', 'UserController@vupcheck');
+Route::post('/upload/video', 'UserController@video');
+Route::get('/archive/video','UserController@varccheck');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/writeblog','BlogController@formBlog');
+Route::post('/writeblog','BlogController@postBlog');
+Route::get('/archive/blog','BlogController@barccheck');

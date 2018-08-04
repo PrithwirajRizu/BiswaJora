@@ -19,9 +19,21 @@
  
  div{
     padding-left: 170px;
+
+
+ }
+ .dv{
+
+    background-color: lightgrey;
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+    color: black;
+
  }
  body{
-  background-color: black;
+  background-color: #4e7055;
   color: white;
  }
 </style>
@@ -97,7 +109,7 @@
 </div>
 </nav> 
 
-<h2 align="center">বিশ্বজোড়া পাঠশালা এর ভিডিও সমগ্র</h2>
+<h2 align="center">বিশ্বজোড়া পাঠশালা এর ব্লগ সমগ্র</h2>
 
 <div class="main">
   <div class="container">

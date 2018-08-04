@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Biswajora Pathsala</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style type="text/css">
-  .centered {
+<html>
+   <head>
+      <title>Biswajora PathShala</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      <style type="text/css">
+         div{
+            text-align: center;
+         }
+         button{
+
+            background-color: #4CAF50;
+
+         }
+         .centered {
     position: absolute;
     text-align: center;
     color: white;
@@ -16,21 +25,10 @@
     left: 0%;
     transform: translate(-50%, -50%);
   }
- 
- div{
-    padding-left: 170px;
- }
- body{
-  background-color: black;
-  color: white;
- }
-</style>
-
-</head>
-<body>
-
-
- <nav class="navbar navbar-inverse">
+      </style>
+   </head>
+   <body>
+    <nav class="navbar navbar-inverse">
 
   <div class="navbar-header">
 
@@ -42,7 +40,7 @@
     <div class="container-fluid">
 
      <ul class="nav navbar-nav">
-      <li class="active"><a href="/home">Home</a></li>
+      <li class="active"><a href="#">Home</a></li>
       <li class="dropdown">
        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources
          <span class="caret"></span></a>
@@ -96,13 +94,48 @@
 
 </div>
 </nav> 
+      <div class="container">
+         <header> <font size="5">ব্লগ তৈরি করুন </font></header>
+         <br>
+         <br>
+         <br>
+      </div>
 
-<h2 align="center">বিশ্বজোড়া পাঠশালা এর ভিডিও সমগ্র</h2>
-
-<div class="main">
-  <div class="container">
-    @yield('change_as_you_wish')
-  </div>
-</div>
-</body>
+       <script type="text/javascript">
+            $(function() { 
+               $(".hide-it").hide(5000);
+         });
+            
+        </script>
+        @if (Session::has('message'))
+        <div>
+            <h1 class='hide-it'>Your blog content has been posted successfully.Check it in Archive</h1>
+        </div>
+        @endif
+    
+     
+      <form action="" method="post">
+        @csrf
+         <div class="container">
+            <div class="row test">
+               <div class="col-md-8">
+                  <div class="row">
+                     <div class="col-sm-6 form-group">
+                        <input class="form-control"  name="title" placeholder="Tag..." type="text" required>
+                     </div>
+                     
+                  </div>
+                  <textarea class="form-control"  name="content" placeholder="Write here..." rows="15" required></textarea>
+                 
+                  <div class="row">
+                     <div class="col-md-12 form-group">
+                        
+                        <button type="submit" class="btn pull-right">{{  __('Submit')  }}</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </form>
+   </body>
 </html>
