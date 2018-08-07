@@ -113,7 +113,7 @@
   <div class="navbar-header">
 
 
-     <a class="navbar-brand" href="#" align="left">বিশ্বজোড়া পাঠশালা</a>
+     <a class="navbar-brand" href="/home" align="left">বিশ্বজোড়া পাঠশালা</a>
   </div>
   <div class="container">
 
@@ -134,7 +134,7 @@
          <span class="caret"></span></a>
          <ul class="dropdown-menu">
           <li><a href="/writeblog">Write Blog</a></li>
-          <li><a href="#">Ask Question</a></li>
+          <li><a href="/askquestion">Ask Question</a></li>
           <li><a href="/upload/video">Upload Video tutorial</a></li>
         </ul>
       </li>
@@ -143,7 +143,7 @@
          <span class="caret"></span></a>
          <ul class="dropdown-menu">
           <li><a href="/archive/blog">All Blog Posts</a></li>
-          <li><a href="#">All Questions</a></li>
+          <li><a href="/archive/question">All Questions</a></li>
           <li><a href="/archive/video">All Video tutorials</a></li>
         </ul>
       </li>

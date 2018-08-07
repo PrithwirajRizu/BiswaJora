@@ -25,6 +25,21 @@
     left: 0%;
     transform: translate(-50%, -50%);
   }
+  body{
+    background-image: url("image15.jpg")
+  }
+  textarea {
+ width: 300px;
+ height: 100px;
+ background-color: red;
+ font-size: 1em;
+ font-weight: bold;
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ border: 1px solid black;
+} 
+.button {
+    color: black;
+}
       </style>
    </head>
    <body>
@@ -33,7 +48,7 @@
   <div class="navbar-header">
 
 
-     <a class="navbar-brand" href="#" align="left">বিশ্বজোড়া পাঠশালা</a>
+     <a class="navbar-brand" href="/home" align="left">বিশ্বজোড়া পাঠশালা</a>
   </div>
   <div class="container">
 
@@ -54,7 +69,7 @@
          <span class="caret"></span></a>
          <ul class="dropdown-menu">
           <li><a href="/writeblog">Write Blog</a></li>
-          <li><a href="#">Ask Question</a></li>
+          <li><a href="/askquestion">Ask Question</a></li>
           <li><a href="/upload/video">Upload Video tutorial</a></li>
         </ul>
       </li>
@@ -63,7 +78,7 @@
          <span class="caret"></span></a>
          <ul class="dropdown-menu">
           <li><a href="/archive/blog">All Blog Posts</a></li>
-          <li><a href="#">All Questions</a></li>
+          <li><a href="/archive/question">All Questions</a></li>
           <li><a href="/archive/video">All Video tutorials</a></li>
         </ul>
       </li>
@@ -95,7 +110,7 @@
 </div>
 </nav> 
       <div class="container">
-         <header> <font size="5">ব্লগ তৈরি করুন </font></header>
+         <header> <font size="5" color="white">ব্লগ তৈরি করুন </font></header>
          <br>
          <br>
          <br>
@@ -109,7 +124,7 @@
         </script>
         @if (Session::has('message'))
         <div>
-            <h1 class='hide-it'>Your blog content has been posted successfully.Check it in Archive</h1>
+            <h1 class='hide-it'><font color="yellow">Your blog content has been posted successfully.Check it in Archive</font></h1>
         </div>
         @endif
     
@@ -126,11 +141,12 @@
                      
                   </div>
                   <textarea class="form-control"  name="content" placeholder="Write here..." rows="15" required></textarea>
+                  <br>
                  
                   <div class="row">
                      <div class="col-md-12 form-group">
                         
-                        <button type="submit" class="btn pull-right">{{  __('Submit')  }}</button>
+                        <button type="submit" class="btn btn-warning-right" color="black">{{  __('Submit')  }}</button>
                      </div>
                   </div>
                </div>

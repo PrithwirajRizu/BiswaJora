@@ -30,3 +30,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/writeblog','BlogController@formBlog');
 Route::post('/writeblog','BlogController@postBlog');
 Route::get('/archive/blog','BlogController@barccheck');
+
+
+
+Route::get('/askquestion','QuestionController@askQuestion');
+Route::post('/askquestion','QuestionController@postQuestion');
+
+
+Route::get('/archive/question','QuestionController@archiveCheck');
+Route::post('/archive/question','QuestionController@postComment');

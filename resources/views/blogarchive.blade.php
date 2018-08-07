@@ -7,10 +7,10 @@ $allblogs=App\Blog::all();
 ?>
 
 @foreach($allblogs as $key)
-<article>
+<article area shape="rect">
 
 <header>
-<h3> {{ $key->title }} </h3>
+<h3><font color="black"><b> Blog No. {{ $key->id }}--> <u>{{ $key->title }}</u></b></font> </h3>
 </header>
 
 
