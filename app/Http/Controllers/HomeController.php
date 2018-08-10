@@ -27,11 +27,5 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function isLogin()
-    {
-        if(Auth::check()){
-                    return redirect('/home');
-                }
-                return redirect('/');
-    }
+    
 }

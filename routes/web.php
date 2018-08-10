@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/','HomeController@isLogin');
+
 
 Route::post('/', function () {
     return view('welcome');
