@@ -47,7 +47,7 @@ class QuestionController extends Controller
 
     			$comment->question_id = $request->input('question_id');
 
-                $comment->name = $request->input('name');
+                $comment->idx = $request->input('no');
 
     			$comment->save();
 

@@ -24,7 +24,6 @@
     {
         background: url('https://wallpapercave.com/wp/wp1966328.jpg') fixed;
         background-size: 1370px 750px;
-
         padding: 0;
         margin: 0;
     }
@@ -41,7 +40,6 @@
         left: 0;
         z-index: 99;
     }
-
     p.form-title
     {
         font-family: 'Open Sans' , sans-serif;

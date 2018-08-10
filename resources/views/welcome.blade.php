@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -241,13 +242,17 @@
                   <p><span class="glyphicon glyphicon-phone"></span>Phone: 01985240328</p>
                   <p><span class="glyphicon glyphicon-envelope"></span>Email: biswajora@gmail.com</p>
                </div>
+             
+
+               <form method="post" action="">
+                  @csrf
                <div class="col-md-8">
                   <div class="row">
                      <div class="col-sm-6 form-group">
                         <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
                      </div>
                      <div class="col-sm-6 form-group">
-                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                        <input class="form-control" id="email" name="email" placeholder="Your Email" type="email" required>
                      </div>
                   </div>
                   <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
@@ -258,6 +263,7 @@
                      </div>
                   </div>
                </div>
+            </form>
 
             </div>
          </div>

@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/','HomeController@isLogin');
+
+Route::post('/', function () {
+    return view('welcome');
+});
+
 Route::get('/book', function () {
     return view('books');
 });
@@ -39,3 +45,6 @@ Route::post('/askquestion','QuestionController@postQuestion');
 
 Route::get('/archive/question','QuestionController@archiveCheck');
 Route::post('/archive/question','QuestionController@postComment');
+
+Route::get('/profile','ProfileController@profile');
+Route::post('/profile','ProfileController@update_avatar');
