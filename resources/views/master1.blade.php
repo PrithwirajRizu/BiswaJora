@@ -8,39 +8,42 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style type="text/css">
-  .centered {
-    position: absolute;
-    text-align: center;
-    color: white;
-    top: 60%;
-    left: 0%;
-    transform: translate(-50%, -50%);
-  }
+
  
+
  div{
     padding-left: 170px;
 
 
  }
- .dv{
+#content {
+  overflow: hidden;
+  height: 9em;
+  line-height: 1.3em;
+  width: 1000px;
+}
 
-    background-color: lightgrey;
-    
-    resize: both;
-    border: 25px solid green;
-    padding: 25px;
-    margin: 25px;
-    color: black;
+#more:checked + div {
+  height: auto;
+}
+ body{
+  color: #784212;
 
  }
- body{
-  background-color: #4e7055;
-  color: white;
+ 
+p{
+  
+  text-justify:  inter-word;
+}
+
+ header{
+  color: black;
  }
 </style>
 
 </head>
 <body>
+
 
 
  <nav class="navbar navbar-inverse">
@@ -86,7 +89,7 @@
     <!--  Right Side Of Navbar -->
     <ul class="nav navbar-nav navbar-right">
       <!-- Authentication Links -->
-  <li class="nav-item dropdown">
+        <li class="nav-item dropdown">
       <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre><img src="/uploads/avatars/{{ Auth::user()->avatar }}" style="width:32px; height:32px; position:absolute; top:8px; left:-30px; border-radius:50%">
         {{ Auth::user()->name }} <span class="caret"></span>
       </a>

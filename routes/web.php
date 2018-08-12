@@ -17,9 +17,7 @@ Route::get('/', function () {
 
 
 
-Route::post('/', function () {
-    return view('welcome');
-});
+Route::post('/', 'MailController@sendMessage');
 
 Route::get('/book', function () {
     return view('books');
@@ -48,3 +46,5 @@ Route::post('/archive/question','QuestionController@postComment');
 
 Route::get('/profile','ProfileController@profile');
 Route::post('/profile','ProfileController@update_avatar');
+
+Route::get('/delete/{user_id}/{comment_id}','QuestionController@delete');

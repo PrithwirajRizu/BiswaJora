@@ -156,6 +156,7 @@ body{
 
 
 @if (Session::has('message'))
+
 <div class="alert alert-success alert-dismissible">
     <a class="close" data-dismiss="alert" aria-label="close">&times;</a>
     <strong>Success!Your question has been posted.Check it in Archive!</strong>

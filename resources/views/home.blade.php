@@ -23,15 +23,13 @@
   <!-- Styles -->
 
   <style type="text/css">
-  .centered {
-    position: absolute;
-    text-align: center;
-    color: white;
-    top: 60%;
-    left: 0%;
-    transform: translate(-50%, -50%);
-  }
-
+  
+  .bg-1 {
+         background: #2d2d30;
+         color: #bdbdbd;
+         }
+         .bg-1 h3 {color: #fff;}
+         .bg-1 p {font-style: italic;}
 </style>
 
 </head>
@@ -149,5 +147,24 @@
  <span class="sr-only">Next</span>
 </a>
 </div>
+<div  class="bg-1">
+         <div class="container">
+            <h3 class="text-center">যোগাযোগ করুনঃ</h3>
+
+            <div class="row">
+               <div class="col-md-4">
+               
+                  <p><span class="glyphicon glyphicon-map-marker"></span>SUST CSE,SYlHET</p>
+                  <p><span class="glyphicon glyphicon-phone"></span>Phone: 01985240328</p>
+                  <p><span class="glyphicon glyphicon-envelope"></span>Email: biswajorapathshala@gmail.com</p>
+               </div>
+             
+
+
+            </div>
+         </div>
+      </div>
+
+
 </body>
 </html>

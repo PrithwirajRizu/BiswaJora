@@ -7,26 +7,34 @@ $allblogs=App\Blog::all();
 ?>
 
 @foreach($allblogs as $key)
-<article area shape="rect">
+<article >
 
-<header>
-<h3><font color="black"><b> Blog No. {{ $key->id }}--> <u>{{ $key->title }}</u></b></font> </h3>
-</header>
+	<header>
+		<h3><u><b>{{ $key->title }}</b></u> </h3>
+	</header>
 
+	<label>
+  <input id="more" type="checkbox">Read more
+  <div id="content">
+  		{{ $key->content}}
+  </div>
+</label>
 
-<div  class="dv">
-
-		{{ $key->content}}
-</div>
-
-</article>
-<footer>
-	Uploaded {{  $key->created_at->diffForHumans()}}
-</footer>
-
-
-@endforeach
+	
+	
+		
 
 
-@stop
+
+
+	</article>
+	<footer><b>
+		created {{  $key->created_at->diffForHumans()}}
+	</footer><b>
+
+
+	@endforeach
+
+
+	@stop
 

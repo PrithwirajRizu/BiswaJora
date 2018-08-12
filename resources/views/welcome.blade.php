@@ -240,7 +240,7 @@
                   <p>যোগাযোগ করুনঃ</p>
                   <p><span class="glyphicon glyphicon-map-marker"></span>SUST CSE,SYlHET</p>
                   <p><span class="glyphicon glyphicon-phone"></span>Phone: 01985240328</p>
-                  <p><span class="glyphicon glyphicon-envelope"></span>Email: biswajora@gmail.com</p>
+                  <p><span class="glyphicon glyphicon-envelope"></span>Email: biswajorapathshala@gmail.com</p>
                </div>
              
 
@@ -255,7 +255,7 @@
                         <input class="form-control" id="email" name="email" placeholder="Your Email" type="email" required>
                      </div>
                   </div>
-                  <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                  <textarea class="form-control" id="sms" name="sms" placeholder="Comment" rows="5" required></textarea>
                   <br>
                   <div class="row">
                      <div class="col-md-12 form-group">

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
-
+use DB;
 use App\Question;
 use App\Comment;
 class QuestionController extends Controller
@@ -52,5 +52,16 @@ class QuestionController extends Controller
     			$comment->save();
 
     			return redirect()->back();
+    }
+
+    public function delete($id,$comment_id){
+      if(Auth::user()->id==$id){ 
+
+       DB::table('comments')->where('idx',$id)->where('id',$comment_id)->delete();
+       
+
+        return redirect('/archive/question');
+    }
+         return redirect('/archive/question');
     }
 }

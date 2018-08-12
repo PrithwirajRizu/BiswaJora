@@ -153,8 +153,13 @@ $allcomments = App\Question::find($x)->comments;
   ?>
   <img src="/uploads/avatars/{{ $prsn->avatar }}" style="width:32px; height:32px">
   <p><strong> {{ $prsn->name }} replied {{ $k->created_at->diffForHumans() }}  <strong> </p>
+
    <blockquote>{{$k->content}} </blockquote>
+   @if($k->idx==Auth::user()->id)
+   <a href="/delete/{{$k->idx}}/{{$k->id}}"><button class="btn btn-primary">Delete</button></a>
+   @endif
  </div>
+ <br>
  @endforeach
 </section>
 </div>
