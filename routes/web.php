@@ -18,6 +18,7 @@ Route::get('/', function () {
 
 
 Route::post('/', 'MailController@sendMessage');
+Route::post('/home', 'MailController@sendMessage');
 
 Route::get('/book', function () {
     return view('books');
@@ -34,6 +35,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/writeblog','BlogController@formBlog');
 Route::post('/writeblog','BlogController@postBlog');
 Route::get('/archive/blog','BlogController@barccheck');
+Route::post('/archive/blog','BlogController@addUpvote');
 
 
 

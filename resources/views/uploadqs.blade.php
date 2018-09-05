@@ -1,84 +1,74 @@
-<html>
-<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="prerender" href="https://hide.me/en/pricing">
-    <link rel="dns-prefetch" href="//www.google-analytics.com">
-    <link rel="canonical" href="https://hide.me/en/proxy">
+<html lang="en">
+<head>
+    
     <title>Biswajora Pathsahla</title>
-    <link rel="alternate" href="https://hide.me/proxy" hreflang="x-default">
-    <link rel="alternate" href="https://hide.me/ar/proxy" hreflang="ar">
-    <link rel="alternate" href="https://hide.me/de/proxy" hreflang="de">
-    <link rel="alternate" href="https://hide.me/en/proxy" hreflang="en">
-    <link rel="alternate" href="https://hide.me/es/proxy" hreflang="es">
-    <link rel="alternate" href="https://hide.me/fr/proxy" hreflang="fr">
-    <link rel="alternate" href="https://hide.me/id/proxy" hreflang="id">
-    <link rel="alternate" href="https://hide.me/it/proxy" hreflang="it">
-    <link rel="alternate" href="https://hide.me/nl/proxy" hreflang="nl">
-    <link rel="alternate" href="https://hide.me/pl/proxy" hreflang="pl">
-    <link rel="alternate" href="https://hide.me/pt/proxy" hreflang="pt">
-    <link rel="alternate" href="https://hide.me/ru/proxy" hreflang="ru">
-    <!-- Facebook Metadata -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hide.me/en/">
-    <meta property="og:site_name" content="hide.me VPN">
-    <meta property="og:title" content="hide.me VPN">
-    <meta property="og:description" content="Surf the web anonymously without third-parties spying on you.">
-    <meta property="og:image" content="https://hide.me/resources/248/images/facebook-hide.png">
-    <meta property="og:image:secure_url" content="https://hide.me/resources/248/images/facebook-hide.png">
-    <meta property="og:image:width" content="200">
-    <meta property="og:image:height" content="200">
-    <meta property="og:video" content="https://vimeo.com/78710225">
-    <!-- Google+ Metadata -->
-    <meta itemprop="url" content="https://hide.me/">
-    <meta itemprop="name" content="hide.me VPN">
-    <meta itemprop="alternateName" content="hide.me">
-    <meta itemprop="description" content="Surf the web anonymously without third-parties spying on you.">
-    <meta itemprop="image" content="https://hide.me/resources/248/images/facebook-hide.png">
-    <!-- Twitter Cards and Open Graph -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@thevpncompany">
-    <meta name="twitter:creator" content="@thevpncompany">
-    <meta name="twitter:url" content="https://hide.me/">
-    <meta name="twitter:title" content="World's fastest VPN and Privacy Protection">
-    <meta name="twitter::description" content="Surf the web anonymously without third-parties spying on you.">
-    <meta name="twitter:image" content="https://hide.me/resources/248/images/facebook-hide.png">
-    <!-- Styles -->
-    <link rel="stylesheet" href="https://hide.me/resources/248/dist/web.6d12c8c01368e2e89cc4.css">
-    <meta name="apple-mobile-web-app-title" content="hide.me">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!--[if lt IE 9]><script src="https://hide.me/resources/248/dist/html5shiv.807f146cffa00f141831.js"></script><![endif]-->
-    <script type="text/javascript" async="" src="https://www.google-analytics.com/gtm/js?id=GTM-NPWLZ7K&amp;cid=1926910036.1533314294"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="application/ld+json">
-        {
-          "@context": "http://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@id": "https://hide.me/en/proxy", "name": "menu-proxy"}},{"@type": "ListItem", "position": 2, "item": {"@id": "https://hide.me/en/proxy", "name": "menu-proxy"}}]
-      }
-  </script>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+ <script type="text/javascript">
+   $(document).ready(function(){
+  $('#title').focus();
+    $('#text').autosize();
+});
+ </script>
+  
+<style type="text/css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <style type="text/css">
 
-  div{
-    text-align: center;
+#paper {
+  color:#FFF;
+  font-size:20px;
+}
+#margin {
+  margin-left:12px;
+  margin-bottom:20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; 
+}
+#texte {
+  width:500px;
+  overflow:hidden;
+  background-color:#FFF;
+  color:#222;
+  font-family:Courier, monospace;
+  font-weight:normal;
+  font-size:24px;
+  resize:none;
+  line-height:40px;
+  padding-left:100px;
+  padding-right:100px;
+  padding-top:45px;
+  padding-bottom:34px;
+  background-image:url(https://static.tumblr.com/maopbtg/E9Bmgtoht/lines.png), url(https://static.tumblr.com/maopbtg/nBUmgtogx/paper.png);
+  background-repeat:repeat-y, repeat;
+  -webkit-border-radius:12px;
+  border-radius:12px;
+  -webkit-box-shadow: 0px 2px 14px #000;
+  box-shadow: 0px 2px 14px #000;
+  border-top:1px solid #FFF;
+  border-bottom:1px solid #FFF;
+}
+#title {
+  background-color:transparent;
+  border-bottom:3px solid #FFF;
+  color:#FFF;
+  font-size:20px;
+  font-family:Courier, monospace;
+  height:28px;
+  font-weight:bold;
+  width:220px;
 }
 body{
     background-image: url('brain.jpg');
     background-image-width:1000; 
 }
-/*.centered {
-    position: absolute;
-    text-align: center;
-    color: white;
-    top: 60%;
-    left: 0%;
-    transform: translate(-50%, -50%);
-}*/
 
 </style>
 
@@ -171,21 +161,28 @@ echo "<br>";
 ?>
 
 
-<form class="o-pageproxy__form u-bgodd js-proxyform" method="post" action="">
+<form  method="post" action="">
     @csrf
-    <fieldset>
-        <div class="form-group">
-         <div class="input-group">
-             <div class="input-group-addon"></div>
-             <input class="form-control" name="content" type="text" placeholder="Ask Question ?" required>
-         </div> 
+   
+     <div class="col-md-3"></div>
+   <div class="col-md-8">
+                 
+                  <textarea placeholder="Ask a Question..." id="texte" name="content" rows="10" style="overflow: hidden; word-wrap: break-word; resize: none; height: 300px; "></textarea> 
+
+                  <br>
+                  <div class="row">
+                     <div class="col-md-12 form-group">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                     </div>
+                  </div>
+               </div>
 
 
-     </div>
+     
 
 
-     <button class="btn pull-right" type="submit">Submit</button>
- </fieldset>
+
+
 </form>
 </body>
 </html>

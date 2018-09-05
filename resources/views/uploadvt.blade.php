@@ -1,68 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head  prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
-     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="prerender" href="https://hide.me/en/pricing">
-    <link rel="dns-prefetch" href="//www.google-analytics.com">
-    <link rel="canonical" href="https://hide.me/en/proxy">
+   
     <title>Biswajora Pathsahla</title>
-    <link rel="alternate" href="https://hide.me/proxy" hreflang="x-default">
-    <link rel="alternate" href="https://hide.me/ar/proxy" hreflang="ar">
-    <link rel="alternate" href="https://hide.me/de/proxy" hreflang="de">
-    <link rel="alternate" href="https://hide.me/en/proxy" hreflang="en">
-    <link rel="alternate" href="https://hide.me/es/proxy" hreflang="es">
-    <link rel="alternate" href="https://hide.me/fr/proxy" hreflang="fr">
-    <link rel="alternate" href="https://hide.me/id/proxy" hreflang="id">
-    <link rel="alternate" href="https://hide.me/it/proxy" hreflang="it">
-    <link rel="alternate" href="https://hide.me/nl/proxy" hreflang="nl">
-    <link rel="alternate" href="https://hide.me/pl/proxy" hreflang="pl">
-    <link rel="alternate" href="https://hide.me/pt/proxy" hreflang="pt">
-    <link rel="alternate" href="https://hide.me/ru/proxy" hreflang="ru">
-    <!-- Facebook Metadata -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hide.me/en/">
-    <meta property="og:site_name" content="hide.me VPN">
-    <meta property="og:title" content="hide.me VPN">
-    <meta property="og:description" content="Surf the web anonymously without third-parties spying on you.">
-    <meta property="og:image" content="https://hide.me/resources/248/images/facebook-hide.png">
-    <meta property="og:image:secure_url" content="https://hide.me/resources/248/images/facebook-hide.png">
-    <meta property="og:image:width" content="200">
-    <meta property="og:image:height" content="200">
-    <meta property="og:video" content="https://vimeo.com/78710225">
-    <!-- Google+ Metadata -->
-    <meta itemprop="url" content="https://hide.me/">
-    <meta itemprop="name" content="hide.me VPN">
-    <meta itemprop="alternateName" content="hide.me">
-    <meta itemprop="description" content="Surf the web anonymously without third-parties spying on you.">
-    <meta itemprop="image" content="https://hide.me/resources/248/images/facebook-hide.png">
-    <!-- Twitter Cards and Open Graph -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@thevpncompany">
-    <meta name="twitter:creator" content="@thevpncompany">
-    <meta name="twitter:url" content="https://hide.me/">
-    <meta name="twitter:title" content="World's fastest VPN and Privacy Protection">
-    <meta name="twitter::description" content="Surf the web anonymously without third-parties spying on you.">
-    <meta name="twitter:image" content="https://hide.me/resources/248/images/facebook-hide.png">
-    <!-- Styles -->
-    <link rel="stylesheet" href="https://hide.me/resources/248/dist/web.6d12c8c01368e2e89cc4.css">
-    <meta name="apple-mobile-web-app-title" content="hide.me">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!--[if lt IE 9]><script src="https://hide.me/resources/248/dist/html5shiv.807f146cffa00f141831.js"></script><![endif]-->
-    <script type="text/javascript" async="" src="https://www.google-analytics.com/gtm/js?id=GTM-NPWLZ7K&amp;cid=1926910036.1533314294"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="application/ld+json">
-        {
-          "@context": "http://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@id": "https://hide.me/en/proxy", "name": "menu-proxy"}},{"@type": "ListItem", "position": 2, "item": {"@id": "https://hide.me/en/proxy", "name": "menu-proxy"}}]
-      }
-  </script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    
   <style type="text/css">
 
   div{
@@ -177,22 +125,36 @@ echo "<br>";
 
 
 
-<form class="o-pageproxy__form u-bgodd js-proxyform" method="post" action="/upload/video" >
+<form method="post" action="/upload/video" >
  @csrf
- <fieldset>
-  <div class="form-group">
-   <div class="input-group">
-    <div class="input-group-addon"></div>
-    <input class="form-control" name="videoLink" type="text" placeholder="Enter Video Link..." required>
-  </div>
-  <div class="input-group">
-    <div class="input-group-addon"></div>
+
+      <div class="col-md-8">
+                 
+                     <div >
+                        <input class="form-control"  name="videoLink" placeholder="Enter Video Link...." type="text" required>
+                     </div>
+                      <br>
+                     <div >
+                        <input class="form-control"  name="title" placeholder="Video Title" type="text" required>
+                     </div>
+                 
+                  
+                 <br>
+                  <div class="row">
+                     <div class="col-md-12 form-group">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                     </div>
+                  </div>
+               </div>
+
+   <!--  <input class="form-control" name="videoLink" type="text" placeholder="Enter Video Link..." required>
+
+    
     <input class="form-control" name="title" type="text" placeholder="Video Titile" required>
-  </div>
-</div>
+  
 
 <button class="c-btn c-btn__primary c-btn--md c-btn--normaltext u-mt15" type="submit">Submit</button>
-</fieldset>
+ -->
 </form>
 
 </body>

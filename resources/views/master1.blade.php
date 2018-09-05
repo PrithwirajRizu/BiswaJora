@@ -7,15 +7,29 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  
+
   <style type="text/css">
 
  
+#myDIV {
+    width: 1400px;
+    height: 50px;
+    
+    background-color: white;
+    color: #784212;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
 
- div{
-    padding-left: 170px;
-
-
- }
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    80% {box-shadow: 10px 20px 30px black;}
+}
+@keyframes mymove {
+    80% {box-shadow: 10px 20px 30px black;}
+}
 #content {
   overflow: hidden;
   height: 9em;
@@ -116,12 +130,13 @@ p{
 </div>
 </nav> 
 
-<h2 align="center">বিশ্বজোড়া পাঠশালা এর ব্লগ সমগ্র</h2>
+<h2 align="center" id="myDIV">বিশ্বজোড়া পাঠশালা এর ব্লগ সমগ্র</h2>
+<br>
 
 <div class="main">
-  <div class="container">
+  
     @yield('change_as_you_wish')
-  </div>
+
 </div>
 </body>
 </html>

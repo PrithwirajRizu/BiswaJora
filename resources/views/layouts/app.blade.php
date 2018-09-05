@@ -64,7 +64,7 @@
 
                <div class="container-fluid">
                 <div class="navbar-header">
-                  <a class="navbar-brand" href="#">Biswajora Pathshala</a>
+                  <a class="navbar-brand" href="/">Biswajora Pathshala</a>
               </div>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                 <span class="navbar-toggler-icon"></span>

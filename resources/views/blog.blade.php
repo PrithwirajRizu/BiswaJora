@@ -7,16 +7,17 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="{{ asset('vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
 
   <style type="text/css">
- #my_textarea {
+  #my_textarea {
 
-  background: transparent;
-  margin-left: 300px;
-  color: black;
-  font-size:19px;
+    background: transparent;
+    margin-left: 300px;
+    color: black;
+    font-size:19px;
 
-}
+  }
   div{
     text-align: center;
   }
@@ -35,7 +36,7 @@
   ::placeholder {
     color: black;
     opacity: 1; /* Firefox */
-}
+  }
   .button {
     color: black;
 
@@ -55,7 +56,7 @@
     <div class="container-fluid">
 
      <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
+      <li class="active"><a href="/home">Home</a></li>
       <li class="dropdown">
        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources
          <span class="caret"></span></a>
@@ -132,7 +133,7 @@
 @endif
 
 
-<form action="" method="post">
+ <form action="" method="post">
   @csrf
   <div class="container">
     <div class="row test">
@@ -143,11 +144,12 @@
       </div>
 
     </div>
-    <textarea align="center" class="form-control" name="content" id="my_textarea" rows="15"  placeholder="Write here......."  required></textarea>
-   
-   <br>
+    <textarea align="center" class="form-control"  name="content" id="my_textarea" rows="15"  placeholder="Write here......."  required></textarea>
+    <input type="hidden" name="no" value="{{ Auth::user()->id }}">
+  
+    <br>
 
-   <div class="row">
+    <div class="row">
      <div class="col-md-12 form-group">
 
       <button type="submit" class="btn btn-warning-right"  color="black">{{  __('Submit')  }}</button>
@@ -157,5 +159,6 @@
 </div>
 </div>
 </form>
+
 </body>
 </html>
